@@ -47,22 +47,6 @@
   padding: 15px;
 }
 
-.separator {
-  display: flex;
-  width: 100%;
-  gap: 15px;
-}
-
-.separador hr {
-  flex-grow: 1;
-  border: none;
-  border-top: 1px solid #ccc;
-}
-
-.separador span {
-  color: #bbb;
-}
-
 .section-inputs {
   display: flex;
   gap: 10px;
@@ -94,6 +78,17 @@ label span {
   border-radius: 10px;
   outline: none;
   font-size: 14pt;
+}
+
+@media (max-width: 28.75em) {
+  .section-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .section-inputs label input {
+    width: 90%;
+  }
 }
 
 label input {
